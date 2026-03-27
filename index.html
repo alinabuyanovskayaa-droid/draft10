@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свадебный Вестник</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #fcfbf9; /* Оттенок дорогой бумаги */
+            --text-color: #2c2c2c;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Стилизация первой буквы для газетного стиля */
+        .drop-cap::first-letter {
+            float: left;
+            font-size: 3.5rem;
+            line-height: 0.8;
+            padding-right: 0.5rem;
+            padding-top: 0.5rem;
+            font-family: 'Playfair Display', serif;
+            color: #111;
+        }
+        /* Разделительная линия */
+        .separator {
+            border-top: 1px solid #d1cdxc4;
+            margin: 2rem 0;
+            position: relative;
+        }
+        .separator::after {
+            content: "✦";
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--bg-color);
+            padding: 0 10px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gray-300">
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-8 py-10 md:py-16">
+        
+        <header class="text-center border-b-[3px] border-t-[3px] border-black py-6 mb-10" data-aos="fade-down" data-aos-duration="1000">
+            <div class="flex justify-between items-center text-xs md:text-sm uppercase tracking-widest font-light mb-4">
+                <span>Минск</span>
+                <span>Специальный Выпуск</span>
+                <span>Август 2026</span>
+            </div>
+            <h1 class="text-6xl md:text-8xl lg:text-9xl tracking-tight mb-2">Вестник Любви</h1>
+            <p class="text-lg md:text-xl italic serif text-gray-700">Официальное издание, посвященное созданию новой семьи</p>
+        </header>
+
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12" data-aos="fade-up" data-aos-duration="1000">
+            <div class="md:col-span-8">
+                <div class="aspect-video bg-gray-200 mb-4 overflow-hidden relative grayscale hover:grayscale-0 transition duration-700">
+                    <img src="главная.jpg" alt="Пара" class="w-full h-full object-cover">
+                    <div class="absolute bottom-2 right-2 text-white text-xs opacity-70">Фото: из личного архива</div>
+                </div>
+            </div>
+            <div class="md:col-span-4 flex flex-col justify-center">
+                <h2 class="text-3xl md:text-4xl mb-4 leading-tight">Они сказали «Да!»: Главное событие этого лета</h2>
+                <p class="font-light text-sm md:text-base leading-relaxed drop-cap mb-4">
+                    Мы рады сообщить вам потрясающую новость. В августе 2026 года в Минске состоится торжество, которого мы все так долго ждали. Двое любящих людей решили объединить свои судьбы и создать семью.
+                </p>
+                <p class="font-light text-sm md:text-base leading-relaxed">
+                    Этот день будет наполнен улыбками, звоном бокалов и теплыми объятиями. Мы приглашаем вас стать частью нашей истории и разделить с нами эти счастливые мгновения.
+                </p>
+            </div>
+        </section>
+
+        <div class="separator"></div>
+
+        <section class="my-12" data-aos="fade-up">
+            <h2 class="text-4xl text-center mb-8">Эксклюзивное интервью</h2>
+            <div class="columns-1 md:columns-2 gap-8 text-sm md:text-base font-light leading-relaxed">
+                <div class="mb-6 break-inside-avoid">
+                    <h3 class="serif text-xl mb-2 font-semibold">Кто первый признался в любви?</h3>
+                    <p class="text-gray-600 mb-4"><em>Она:</em> Это был совершенно обычный вечер, мы гуляли по городу, и вдруг он остановился и сказал это. Я даже не сразу поверила!</p>
+                    <p class="text-gray-600"><em>Он:</em> Я планировал это неделями, но в итоге все вышло спонтанно. Просто понял, что больше не могу молчать.</p>
+                </div>
+                <div class="mb-6 break-inside-avoid">
+                    <h3 class="serif text-xl mb-2 font-semibold">Каким вы видите свой идеальный выходной?</h3>
+                    <p class="text-gray-600">Никакой спешки. Поздний завтрак, кофе, прогулка без определенного маршрута и хороший фильм вечером. Главное — вместе.</p>
+                </div>
+                <div class="mb-6 break-inside-avoid">
+                    <h3 class="serif text-xl mb-2 font-semibold">Самое смешное воспоминание?</h3>
+                    <p class="text-gray-600">Когда мы попытались приготовить ужин по сложному рецепту из интернета на наше первое совместное свидание дома. В итоге пришлось заказывать пиццу, потому что кухню нужно было спасать.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="separator"></div>
+
+        <section class="my-16 max-w-2xl mx-auto text-center" data-aos="zoom-in" data-aos-duration="1000">
+            <h2 class="text-4xl mb-10">Программа торжества</h2>
+            <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gray-300">
+                
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-white bg-gray-800 text-white shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 shadow">
+                        <span class="text-xs font-serif">15:00</span>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] text-left md:group-odd:text-right p-4">
+                        <h3 class="serif text-2xl mb-1">Сбор гостей</h3>
+                        <p class="font-light text-gray-600 text-sm">Приветственный фуршет, шампанское и легкая музыка.</p>
+                    </div>
+                </div>
+
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-white bg-gray-800 text-white shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 shadow">
+                        <span class="text-xs font-serif">16:00</span>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] text-left md:group-even:text-right p-4">
+                        <h3 class="serif text-2xl mb-1">Церемония</h3>
+                        <p class="font-light text-gray-600 text-sm">Трогательный момент обмена клятвами и кольцами.</p>
+                    </div>
+                </div>
+
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-white bg-gray-800 text-white shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 shadow">
+                        <span class="text-xs font-serif">17:00</span>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] text-left md:group-odd:text-right p-4">
+                        <h3 class="serif text-2xl mb-1">Праздничный ужин</h3>
+                        <p class="font-light text-gray-600 text-sm">Вкусная еда, танцы и душевные разговоры.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-16 bg-gray-100 p-8 md:p-12 text-center" data-aos="fade-up">
+            <h2 class="text-3xl mb-4">Дресс-код</h2>
+            <p class="font-light max-w-lg mx-auto mb-6">Мы будем рады, если вы поддержите цветовую гамму нашего праздника в своих нарядах.</p>
+            <div class="flex justify-center gap-4">
+                <div class="w-10 h-10 rounded-full bg-[#1c1c1c] shadow-md"></div>
+                <div class="w-10 h-10 rounded-full bg-[#e5e0d8] shadow-md"></div>
+                <div class="w-10 h-10 rounded-full bg-[#8b7d6b] shadow-md"></div>
+                <div class="w-10 h-10 rounded-full bg-[#d4cbb8] shadow-md"></div>
+            </div>
+        </section>
+
+        <section class="max-w-xl mx-auto my-20" data-aos="fade-up">
+            <div class="border border-gray-300 p-8 md:p-12 bg-white shadow-sm">
+                <h2 class="text-3xl text-center mb-2">Анкета гостя</h2>
+                <p class="text-center font-light text-sm text-gray-500 mb-8">Пожалуйста, подтвердите свое присутствие до 1 июля 2026 года</p>
+                
+                <form id="guestForm" class="space-y-6">
+                    <div>
+                        <label class="block serif text-lg mb-2" for="name">Ваши имя и фамилия</label>
+                        <input type="text" id="name" required class="w-full border-b border-gray-300 py-2 bg-transparent focus:outline-none focus:border-black transition-colors font-light">
+                    </div>
+                    
+                    <div>
+                        <span class="block serif text-lg mb-3">Сможете ли вы присутствовать?</span>
+                        <div class="space-y-2 font-light">
+                            <label class="flex items-center gap-3 cursor-pointer">
+                                <input type="radio" name="attendance" value="Да, с удовольствием" class="accent-black w-4 h-4" required>
+                                <span>Да, с удовольствием буду</span>
+                            </label>
+                            <label class="flex items-center gap-3 cursor-pointer">
+                                <input type="radio" name="attendance" value="К сожалению, не смогу" class="accent-black w-4 h-4">
+                                <span>К сожалению, не смогу</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block serif text-lg mb-2" for="drinks">Предпочтения по напиткам</label>
+                        <input type="text" id="drinks" placeholder="Вино, шампанское, виски или б/а напитки..." class="w-full border-b border-gray-300 py-2 bg-transparent focus:outline-none focus:border-black transition-colors font-light text-sm">
+                    </div>
+
+                    <button type="submit" class="w-full bg-black text-white font-serif uppercase tracking-widest py-4 mt-4 hover:bg-gray-800 transition duration-300 text-sm">
+                        Отправить ответ
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="text-center py-8 border-t border-gray-300 mt-12">
+            <p class="font-serif italic text-gray-500">До встречи на нашем празднике!</p>
+        </footer>
+
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Инициализация анимаций
+        AOS.init({
+            once: true,
+            offset: 50,
+        });
+
+        // Обработка отправки формы
+        document.getElementById('guestForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Здесь можно добавить вашу логику отправки данных
+            const btn = this.querySelector('button');
+            const originalText = btn.innerText;
+            
+            btn.innerText = 'Отправлено!';
+            btn.classList.add('bg-green-700');
+            btn.classList.remove('bg-black', 'hover:bg-gray-800');
+            
+            setTimeout(() => {
+                this.reset();
+                btn.innerText = originalText;
+                btn.classList.remove('bg-green-700');
+                btn.classList.add('bg-black', 'hover:bg-gray-800');
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
